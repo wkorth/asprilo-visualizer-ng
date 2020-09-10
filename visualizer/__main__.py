@@ -10,9 +10,10 @@ import logging
 import sys
 import yaml
 from PyQt5.QtWidgets import *
-import solveutils, parseutils
-from modelscene import ModelScene
-from gui import MainWindow, ModelView
+
+from . import solveutils, parseutils
+from .modelscene import *
+from .gui import *
 
 
 def get_args():

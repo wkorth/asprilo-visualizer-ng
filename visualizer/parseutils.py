@@ -1,15 +1,17 @@
 import sys
-import clingo
-import visualizeritem
-from visualizerabstract import VisualizerDemand, VisualizerGoods
-from spritecontainer import SpriteContainer
-from PyQt5.QtSvg import QSvgRenderer
 import yaml
 import logging
 import typing
-import actions
 from typing import Dict
-from model import *
+
+import clingo
+from PyQt5.QtSvg import QSvgRenderer
+
+from . import actions
+from .visualizeritem import *
+from .visualizerabstract import VisualizerDemand, VisualizerGoods
+from .spritecontainer import SpriteContainer
+from .model import *
 
 
 def parse_action(action: str, args: list, actioncfg: Dict[str, str], pickuplist):

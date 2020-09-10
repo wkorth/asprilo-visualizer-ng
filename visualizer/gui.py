@@ -1,4 +1,5 @@
 import sys
+from os import path
 
 from PyQt5.QtWidgets import QApplication
 from PyQt5.QtWidgets import QLabel
@@ -8,12 +9,12 @@ from PyQt5.QtWidgets import QToolBar
 from PyQt5.QtWidgets import QAction, QCheckBox, QComboBox, QDockWidget, QFileDialog, QGraphicsView, QOpenGLWidget, QTabWidget, QTextEdit, QVBoxLayout, QWidget, QStyle
 from PyQt5.QtWidgets import QSizePolicy
 from PyQt5.QtCore import Qt
-from modelscene import ModelScene
-from modelview import ModelView
-from os import path
-import solveutils
-import parseutils
 from PyQt5.QtGui import QIcon
+
+from .modelscene import ModelScene
+from .modelview import ModelView
+from . import solveutils
+from . import parseutils
 
 
 class MainWindow(QMainWindow):

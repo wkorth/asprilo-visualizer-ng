@@ -5,7 +5,7 @@ with open("README.md", "r") as ld:
 
 setuptools.setup(
     name="asprilo-visualizer-ng",
-    version="0.1.0",
+    version="0.1.1",
     author="Wassily Korth",
     author_email="wkorth@uni-potsdam.de",
     description="Planned successor to the asprilo-visualizer",

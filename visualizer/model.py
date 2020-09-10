@@ -1,9 +1,10 @@
-from spritecontainer import SpriteContainer
-from visualizeritem import *
-from visualizerabstract import VisualizerGoods, VisualizerDemand
 from typing import Tuple, Dict, Iterable, Callable, Any
-import actions
 from PyQt5.QtGui import QColor
+
+from .spritecontainer import SpriteContainer
+from .visualizeritem import *
+from .visualizerabstract import *
+from . import actions
 
 Obj_id = Tuple[str, int]
 # TODO: Specify "Any"

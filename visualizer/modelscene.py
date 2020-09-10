@@ -3,11 +3,12 @@ Remove unnecessary class definitions later.
 """
 
 import time
-import parseutils as prs
+
 from PyQt5.QtCore import Qt, pyqtSignal
 from PyQt5.QtWidgets import QGraphicsView, QGraphicsScene, QOpenGLWidget
 from PyQt5.QtGui import *
-from model import *
+
+from .model import *
 
 
 class ModelScene(QGraphicsScene):
